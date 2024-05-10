@@ -1,6 +1,8 @@
-# Title (replace with your title)
+# Email Validation (a study in Regular Expression)
 
-Introductory paragraph (replace this with your text)
+Regular Expression is an incredibly useful tool that allows us to ensure the data we receive is the data that
+we mean to receive. We encounter it all the time whether a site prompts us to enter a password that meets all 
+of the criteria or we're told we need a valid email address to sign up for our free trial. Regular expression is a tool that helps developers ensure that user input is exactly what we expect. Today we're going to learn the basics of regular expression through email validation. 
 
 ## Summary
 
