@@ -24,6 +24,10 @@ There are a number of different regex components that can be found in a regex ex
 
 The anchors in the above regex expression can be found at the beginning and at the very end of the string. Anchors are represented by the `^` and the `$` special characters. The `^` character asserts the beginning of the string and means that the match will start there, while the `$` character asserts the match ends at the end of the string. These anchors used this way mean that the match will include the entire string and won't include any additional characters before or after where the pattern is found. 
 
+### Bracket Expressions
+
+### Quantifiers
+Quantifiers do exactly what they sound like they do. They determine the quantity or amount of characters that must match a pattern. In our email validation pattern there are two types of quantifiers. First are the two `+` characters that appear after the `[a-zA-Z0-9._%-]` and `[a-zA-Z0-9.-]` parts of our pattern. the `+` quantifier means that the string being matched must include one or more of the characters from the bracketed set. The second quantifier in our expression is the `{2,}` near the end of the pattern. This quantifier appears after the `[a-zA-Z]` set and means that the string must include 2 or more characters from the bracketed set. 
 
 ### Grouping and Capturing
 
@@ -32,13 +36,6 @@ Capturing is the process of remembering a part of the input string that matches 
 
 #### Grouping
 Grouping in this context allows one to treat multiple characters within an expression as a single unit. Within the above expression we see a lot of groupings including nested groups. Groups are represented by a parentheses `()` as it is in the above pattern. The parenthesese wrapping around nearly the entire expression means that the pattern has to match the entirety of the expression. If there is only a part of the pattern that matches then nothing matches. You can group a pattern together without capturing with a noncapturing group which is represented by a questionmark followed by a colon within the parenthesis `(?:)`. 
-
-
-### Bracket Expressions
-
-
-### Quantifiers
-Quantifiers do exactly what they sound like they do. They determine the quantity or amount of characters that must match a pattern. In our email validation pattern there are two types of quantifiers. First are the two `+` characters that appear after the `[a-zA-Z0-9._%-]` and `[a-zA-Z0-9.-]` parts of our pattern. the `+` quantifier means that the string being matched must include one or more of the characters from the bracketed set. The second quantifier in our expression is the `{2,}` near the end of the pattern. This quantifier appears after the `[a-zA-Z]` set and means that the string must include 2 or more characters from the bracketed set. 
 
 
 ## Author
